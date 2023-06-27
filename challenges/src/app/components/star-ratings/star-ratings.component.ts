@@ -13,4 +13,16 @@ export class StarRatingsComponent {
 
     return Array(totalFullStars).fill(0);
   }
+  public get hasHalfStar(): boolean {
+    const hasHalfStar =
+      this.rating - Math.floor(this.rating) >= 0.5 && this.rating !== 5;
+
+    return hasHalfStar;
+  }
+
+  public get emptyStars(): number[] {
+    const highestRating = 5;
+    const totalEmptyStars = Math.floor(highestRating - this.rating);
+    return Array(totalEmptyStars).fill(0);
+  }
 }
