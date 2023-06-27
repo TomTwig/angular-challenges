@@ -16,6 +16,15 @@
     <app-progress-bar body [value]="progressBarValue"></app-progress-bar>
     <button footer (click)="progressBarValue = 75">update</button>
   </app-card>
+
+  <app-card
+    [iconClasses]="'fas fa-info-circle'"
+    [title]="'Star Ratings'"
+    [subTitle]="'Components'"
+  >
+    <app-star-ratings [rating]="5" body></app-star-ratings>
+  </app-card>
+
   <app-card
     [iconClasses]="'fas fa-info-circle'"
     [title]="'Accordion'"

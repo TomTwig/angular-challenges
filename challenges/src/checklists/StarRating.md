@@ -1,0 +1,5 @@
+- @Component
+- @Input()
+- \*ngFor
+- \*ngIf
+- getter functions
