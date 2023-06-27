@@ -1,0 +1,8 @@
+- ngcontent select (scope)
+- component
+- \*ngFor
+- [class] (\*ngIf for css classes)
+- scss nesting
+- property binding
+- event binding
+- interfaces
