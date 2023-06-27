@@ -1,0 +1,4 @@
+- component
+- @Input()
+- html progress bar element
+- html small element

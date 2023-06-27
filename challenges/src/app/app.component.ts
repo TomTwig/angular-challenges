@@ -14,5 +14,7 @@ export class AppComponent {
     { title: 'Example 2', content: 'Example Content 2', isExpanded: false },
   ];
 
+  progressBarValue = 25;
+
   constructor() {}
 }
