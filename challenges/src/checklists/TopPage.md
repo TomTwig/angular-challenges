@@ -1,5 +1,0 @@
-- @Component
-- ViewportScroller
-- @HostListener
-- css class bindings
-- short if / boolean | isShown = yCoodinate > 400
