@@ -1,4 +1,4 @@
-@import "../../../styles.scss";
+@import '../../../styles.scss';
 
 button {
     position: fixed;
@@ -15,16 +15,16 @@ button {
     width: 0;
     visibility: hidden;
 
-    &.is-shown{
+    &.is-shown {
         height: 50px;
         width: 50px;
-        visibility:visible;
+        visibility: visible;
         color: white;
 
-        i{
+        i {
             font-size: 0;
 
-            &.is-shown{
+            &.is-shown {
                 font-size: 15px;
             }
         }

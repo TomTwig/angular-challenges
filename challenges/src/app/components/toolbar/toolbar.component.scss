@@ -1,36 +1,31 @@
-@import "../../../styles";
+@import '../../../styles';
 
-
-.toolbar-container{
-  display: grid;
-  grid-template-columns: 1fr auto;
-  padding: 10px;
-  grid-gap: 10px;
-  align-items: center;
-  background-color: $blue;
-  color: white;
-
-  @include box-shadow();
-  @media screen and (max-width: $tablet) {
-    grid-template-columns: 1fr;
-
-  }
-
-}
-
-.content{
-
-}
-
-:host ::ng-deep{
-  ul{
+.toolbar-container {
     display: grid;
-    gap: 10px;
-    grid-auto-flow: column;
-  }
+    grid-template-columns: 1fr auto;
+    padding: 10px;
+    grid-gap: 10px;
+    align-items: center;
+    background-color: $blue;
+    color: white;
 
-  li{
-    list-style: none;
-  }
+    @include box-shadow();
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr;
+    }
+}
 
+.content {
+}
+
+:host ::ng-deep {
+    ul {
+        display: grid;
+        gap: 10px;
+        grid-auto-flow: column;
+    }
+
+    li {
+        list-style: none;
+    }
 }

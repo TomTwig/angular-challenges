@@ -1,5 +1,5 @@
 export interface AccordionItem {
-  title: string;
-  content: string;
-  isExpanded: boolean;
+    title: string;
+    content: string;
+    isExpanded: boolean;
 }

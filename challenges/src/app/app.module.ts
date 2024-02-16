@@ -12,18 +12,18 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { APP_ROUTES } from './app.routes';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    CardComponent,
-    AccordionComponent,
-    ProgressBarComponent,
-    StartRatingsComponent,
-    TopOfPageComponent,
-    ComponentDocumentationComponent,
-  ],
-  imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES)],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        ToolbarComponent,
+        CardComponent,
+        AccordionComponent,
+        ProgressBarComponent,
+        StartRatingsComponent,
+        TopOfPageComponent,
+        ComponentDocumentationComponent
+    ],
+    imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES)],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
