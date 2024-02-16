@@ -10,6 +10,9 @@ import { TopOfPageComponent } from './components/top-of-page/top-of-page.compone
 import { ROUTES, RouterModule } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { APP_ROUTES } from './app.routes';
+import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
+import { PipesDocumentationComponent } from './components/pipes-documentation/pipes-documentation.component';
+import { DirectivesDocumentationComponent } from './components/directives-documentation/directives-documentation.component';
 
 @NgModule({
     declarations: [

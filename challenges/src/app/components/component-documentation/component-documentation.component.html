@@ -1,13 +1,21 @@
 <div class="documentation-componnet-container">
-    <app-card [title]="'Accordion'" [subTitle]="'Components'">
-        <app-accordion body [items]="accordionItems"></app-accordion>
+    <app-card [title]="'TopOfPage'" [subTitle]="'Components'">
+        <p body>Scroll down the page to render</p>
+    </app-card>
+
+    <app-card [title]="'Star Rating'" [subTitle]="'Components'">
+        <app-start-ratings body [rating]="2.5" [maxRating]="5"></app-start-ratings>
     </app-card>
 
     <app-card [title]="'Progress Bar'" [subTitle]="'Components'">
         <app-progress-bar body [value]="progress"></app-progress-bar>
     </app-card>
 
-    <app-card [title]="'Star Rating'" [subTitle]="'Components'">
-        <app-start-ratings body [rating]="2.5" [maxRating]="5"></app-start-ratings>
+    <app-card [title]="'Accordion'" [subTitle]="'Components'">
+        <app-accordion body [items]="accordionItems"></app-accordion>
+    </app-card>
+
+    <app-card [title]="'Card'" [subTitle]="'Components'">
+        <p body>Body Content</p>
     </app-card>
 </div>
