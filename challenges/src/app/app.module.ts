@@ -12,6 +12,7 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { APP_ROUTES } from './app.routes';
 
 import { PipesModule } from './pipes/pipes.module';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { PipesModule } from './pipes/pipes.module';
         ProgressBarComponent,
         StartRatingsComponent,
         TopOfPageComponent,
-        ComponentDocumentationComponent
+        ComponentDocumentationComponent,
+        LoaderComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), PipesModule],
     providers: [],

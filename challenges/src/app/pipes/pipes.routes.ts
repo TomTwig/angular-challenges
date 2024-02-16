@@ -3,7 +3,7 @@ import { PipesDocumentationComponent } from '../components/pipes-documentation/p
 
 export const PIPES_ROUTES: Routes = [
     {
-        path: '',
+        path: 'pipes',
         component: PipesDocumentationComponent
     }
 ];

@@ -1,8 +1,5 @@
 import { Routes } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
-import { DirectivesDocumentationComponent } from './components/directives-documentation/directives-documentation.component';
-import { PipesDocumentationComponent } from './components/pipes-documentation/pipes-documentation.component';
-import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
 
 export const APP_ROUTES: Routes = [
     { path: '', component: ComponentDocumentationComponent },
