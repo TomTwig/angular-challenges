@@ -7,12 +7,11 @@ import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StartRatingsComponent } from './components/start-ratings/start-ratings.component';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
-import { ROUTES, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { APP_ROUTES } from './app.routes';
-import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
-import { PipesDocumentationComponent } from './components/pipes-documentation/pipes-documentation.component';
-import { DirectivesDocumentationComponent } from './components/directives-documentation/directives-documentation.component';
+
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
     declarations: [
@@ -25,7 +24,7 @@ import { DirectivesDocumentationComponent } from './components/directives-docume
         TopOfPageComponent,
         ComponentDocumentationComponent
     ],
-    imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES)],
+    imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), PipesModule],
     providers: [],
     bootstrap: [AppComponent]
 })
