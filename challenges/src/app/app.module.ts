@@ -13,6 +13,8 @@ import { APP_ROUTES } from './app.routes';
 
 import { PipesModule } from './pipes/pipes.module';
 import { LoaderComponent } from './components/loader/loader.component';
+import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
+import { DirectivesDocumentationComponent } from './directives/directives-documentation/directives-documentation.component';
 
 @NgModule({
     declarations: [

@@ -4,15 +4,16 @@ import { Pipe, PipeTransform } from '@angular/core';
     name: 'creditCardFormatter'
 })
 export class CreditCardFormatterPipe implements PipeTransform {
-    transform(cardNumber: string): string {
-        if (this.hasCorrectLength(cardNumber)) {
+    transform(cardNumber: string): string | undefined {
+        if (!this.hasCorrectLength(cardNumber)) {
             return 'Invalid Card Length';
         }
 
         if (!this.isAllNumbers(cardNumber)) {
-            return 'Invalid Card Length';
+            return 'Invalid Characters';
         }
-        return 'null';
+
+        return this.formatCardNumber(cardNumber);
     }
 
     private isAllNumbers(cardNumber: string): boolean {
@@ -29,9 +30,9 @@ export class CreditCardFormatterPipe implements PipeTransform {
 
         if (cardNumberLength === isAmericanExpressCardLength || cardNumberLength === isVisaCardLength) {
             return true;
+        } else {
+            return false;
         }
-
-        return false;
     }
 
     private formatCardNumber(cardNumber: string): string | undefined {
