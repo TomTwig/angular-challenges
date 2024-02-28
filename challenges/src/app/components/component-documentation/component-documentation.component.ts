@@ -9,6 +9,7 @@ import { AccordionItem } from '../accordion/accordion-item.interface';
 export class ComponentDocumentationComponent {
     title = 'challenges';
     progress = 50;
+    isReadonly = true;
 
     accordionItems: AccordionItem[] = [
         { title: 'Example 1', content: 'Example Content 1', isExpanded: false },

@@ -1,5 +1,10 @@
 <div class="documentation-componnet-container">
     <app-card [title]="'Loader'" [subTitle]="'Components'">
+        <app-credit-card-input body [creditCardNumber]="'432143214321'" [isReadonly]="true"></app-credit-card-input>
+        <app-credit-card-input body [creditCardNumber]="'432143214321'" [isReadonly]="false"></app-credit-card-input>
+    </app-card>
+
+    <app-card [title]="'Loader'" [subTitle]="'Components'">
         <app-loader [isLoading]="false" body></app-loader>
     </app-card>
     <app-card [title]="'TopOfPage'" [subTitle]="'Components'">

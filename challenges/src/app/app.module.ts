@@ -12,6 +12,8 @@ import { APP_ROUTES } from './app.routes';
 import { LoaderComponent } from './components/loader/loader.component';
 import { SharedModule } from './shared/shared.module';
 import { PipesModule } from './pipes/pipes.module';
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+
 
 @NgModule({
     declarations: [
@@ -22,7 +24,8 @@ import { PipesModule } from './pipes/pipes.module';
         StartRatingsComponent,
         TopOfPageComponent,
         ComponentDocumentationComponent,
-        LoaderComponent
+        LoaderComponent,
+        CreditCardInputComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), SharedModule, PipesModule],
     providers: [],
