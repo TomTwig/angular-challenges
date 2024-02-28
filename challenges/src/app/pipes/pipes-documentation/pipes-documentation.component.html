@@ -1,8 +1,16 @@
+<app-card [title]="'Pipe'" [subTitle]="'truncate'">
+    <p body>
+        {{
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a diam venenatis felis pharetra pretium ut quis metus. Nullam semper mattis mi eu porta. Ut porta justo non diam elementum luctus. Etiam in lectus porttitor, mattis quam sit amet, tempor mauris. Vivamus porta libero at sem gravida, euismod vestibulum dolor accumsan. Morbi vitae dignissim nisi. Morbi et egestas tellus. Morbi efficitur id nunc non vulputate. Donec vel neque venenatis tortor dictum dictum vitae sed enim. Suspendisse potenti.'
+                | truncate: 50
+        }}
+    </p>
+</app-card>
 
-
-<p>
-    {{
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a diam venenatis felis pharetra pretium ut quis metus. Nullam semper mattis mi eu porta. Ut porta justo non diam elementum luctus. Etiam in lectus porttitor, mattis quam sit amet, tempor mauris. Vivamus porta libero at sem gravida, euismod vestibulum dolor accumsan. Morbi vitae dignissim nisi. Morbi et egestas tellus. Morbi efficitur id nunc non vulputate. Donec vel neque venenatis tortor dictum dictum vitae sed enim. Suspendisse potenti.'
-            | truncate: 50
-    }}
-</p>
+<app-card [title]="'Pipe'" [subTitle]="'creditCardFormatter'">
+    <div body>
+        <p>123456789190000 - {{ '123456789190000' | creditCardFormatter }}</p>
+        <p>12345678919abcd - {{ '12345678919abcd' | creditCardFormatter }}</p>
+        <p>123456789190 - {{ '123456789190' | creditCardFormatter }}</p>
+    </div>
+</app-card>
