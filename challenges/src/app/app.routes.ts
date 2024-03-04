@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 
 export const APP_ROUTES: Routes = [
-    { path: '', component: ComponentDocumentationComponent },
+    { path: '', loadChildren: () => import('./components/components.module').then((m) => m.ComponentsModule) },
     {
         path: 'directives',
         loadChildren: () => import('./directives/directives.module').then((m) => m.DirectivesModule)
