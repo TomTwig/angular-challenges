@@ -1,4 +1,7 @@
 <div class="documentation-component-container">
+    <app-card [title]="'TwitterPost'" [subTitle]="'Components'">
+        <app-twitter-post body></app-twitter-post>
+    </app-card>
     <app-card [title]="'Loader'" [subTitle]="'Components'">
         <app-credit-card-input body [creditCardNumber]="'432143214321'" [isReadonly]="false"></app-credit-card-input>
         <br body />
@@ -6,7 +9,7 @@
     </app-card>
 
     <app-card [title]="'Loader'" [subTitle]="'Components'">
-        <app-loader [isLoading]="true" [loaderType]="loaderType" body></app-loader>
+        <app-loader [isLoading]="false" [loaderType]="loaderType" body></app-loader>
     </app-card>
 
     <app-card [title]="'TopOfPage'" [subTitle]="'Components'">

@@ -10,6 +10,7 @@ import { CreditCardInputComponent } from './credit-card-input/credit-card-input.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { COMPONENTS_ROUTES } from './components.routes';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { COMPONENTS_ROUTES } from './components.routes';
         ProgressBarComponent,
         StartRatingsComponent,
         LoaderComponent,
-        CreditCardInputComponent
+        CreditCardInputComponent,
+        TwitterPostComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })
