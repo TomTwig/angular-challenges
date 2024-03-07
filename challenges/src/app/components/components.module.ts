@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { COMPONENTS_ROUTES } from './components.routes';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
         StartRatingsComponent,
         LoaderComponent,
         CreditCardInputComponent,
-        TwitterPostComponent
+        TwitterPostComponent,
+        LinkedinPostComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })
