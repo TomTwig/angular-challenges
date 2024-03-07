@@ -16,7 +16,7 @@ export class LoaderComponent implements OnInit {
     }
 
     private loading = 'Loading';
-    private loadingPeriods = '.\0\0';
+    private loadingPeriods = '.  ';
 
     ngOnInit(): void {
         if (this.loaderType === LoaderType.Loading) {
@@ -29,7 +29,7 @@ export class LoaderComponent implements OnInit {
         setInterval(() => {
             switch (currentStep % 3) {
                 case 0:
-                    this.loadingPeriods = '..\0';
+                    this.loadingPeriods = '.. ';
                     currentStep++;
                     break;
                 case 1:
@@ -37,7 +37,7 @@ export class LoaderComponent implements OnInit {
                     currentStep++;
                     break;
                 case 2:
-                    this.loadingPeriods = '.\0\0';
+                    this.loadingPeriods = '.  ';
                     currentStep = 0;
                     break;
             }
