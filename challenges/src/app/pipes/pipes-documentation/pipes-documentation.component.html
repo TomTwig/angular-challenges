@@ -14,3 +14,14 @@
         <p>123456789190 - {{ '123456789190' | creditCardFormatter }}</p>
     </div>
 </app-card>
+
+<app-card [title]="'Pipe'" [subTitle]="'Flatten'">
+    <div body>
+      {{flattenData | flatten}}
+    </div>
+
+    <div>
+        <button (click) ="modifyFlatten()">Modify</button>
+        <button (click) ="reassignFlatten()">Reassign</button>
+    </div>
+</app-card>
