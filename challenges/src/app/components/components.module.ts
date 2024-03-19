@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { COMPONENTS_ROUTES } from './components.routes';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
         LoaderComponent,
         CreditCardInputComponent,
         TwitterPostComponent,
-        LinkedinPostComponent
+        LinkedinPostComponent,
+        ToggleComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })
