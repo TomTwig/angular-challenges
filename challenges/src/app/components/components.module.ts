@@ -13,6 +13,7 @@ import { COMPONENTS_ROUTES } from './components.routes';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { PagingComponent } from './paging/paging.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { ToggleComponent } from './toggle/toggle.component';
         CreditCardInputComponent,
         TwitterPostComponent,
         LinkedinPostComponent,
-        ToggleComponent
+        ToggleComponent,
+        PagingComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })

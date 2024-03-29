@@ -10,6 +10,9 @@
         <br body />
         <app-credit-card-input body [creditCardNumber]="'432143214321'" [isReadonly]="true"></app-credit-card-input>
     </app-card>
+    <app-card>
+        <app-paging body [totalItems]="200"></app-paging>
+    </app-card>
 
     <app-card [title]="'Loader'" [subTitle]="'Components'">
         <app-loader [isLoading]="false" [loaderType]="loaderType" body></app-loader>
