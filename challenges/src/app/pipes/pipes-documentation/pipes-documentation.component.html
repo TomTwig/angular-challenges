@@ -1,3 +1,9 @@
+<app-card [title]="'Pipe'" [subTitle]="'filterTerm'">
+    <p body>
+        {{ ['Hello', 'World', 'Hello World'] | filterTerm: 'Hello' }}
+    </p>
+</app-card>
+
 <app-card [title]="'Pipe'" [subTitle]="'truncate'">
     <p body>
         {{
@@ -17,11 +23,11 @@
 
 <app-card [title]="'Pipe'" [subTitle]="'Flatten'">
     <div body>
-      {{flattenData | flatten}}
+        {{ flattenData | flatten }}
     </div>
 
     <div>
-        <button (click) ="modifyFlatten()">Modify</button>
-        <button (click) ="reassignFlatten()">Reassign</button>
+        <button (click)="modifyFlatten()">Modify</button>
+        <button (click)="reassignFlatten()">Reassign</button>
     </div>
 </app-card>

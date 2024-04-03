@@ -6,7 +6,6 @@ import { TopOfPageComponent } from './components/top-of-page/top-of-page.compone
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { SharedModule } from './shared/shared.module';
-import { PipesModule } from './pipes/pipes.module';
 import {} from './components/credit-card-input/credit-card-input.component';
 
 @NgModule({
