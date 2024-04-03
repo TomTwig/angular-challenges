@@ -15,6 +15,7 @@ import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { PagingComponent } from './paging/paging.component';
 import { QuoteComponent } from './quote/quote.component';
+import { SimpleTableComponent } from './simple-table/simple-table.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { QuoteComponent } from './quote/quote.component';
         LinkedinPostComponent,
         ToggleComponent,
         PagingComponent,
-        QuoteComponent
+        QuoteComponent,
+        SimpleTableComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })
