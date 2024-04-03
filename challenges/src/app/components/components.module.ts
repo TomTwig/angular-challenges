@@ -16,6 +16,7 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { PagingComponent } from './paging/paging.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
         ToggleComponent,
         PagingComponent,
         QuoteComponent,
-        SimpleTableComponent
+        SimpleTableComponent,
+        RichTextViewerComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })
