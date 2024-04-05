@@ -17,6 +17,8 @@ import { PagingComponent } from './paging/paging.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
+import { ModalComponent } from './modal/modal.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
     declarations: [
@@ -32,7 +34,9 @@ import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.com
         PagingComponent,
         QuoteComponent,
         SimpleTableComponent,
-        RichTextViewerComponent
+        RichTextViewerComponent,
+        ModalComponent,
+        CounterComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })

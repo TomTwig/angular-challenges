@@ -16,5 +16,12 @@
         top: 50%;
         bottom: 50%;
         transform: translateY(-50%);
+        right: 5%;
+        transition: all 0.3s;
+
+        &.is-off{
+            right: 65%;
+            background-color: red;
+        }
     }
 }
