@@ -1,0 +1,10 @@
+<app-card [title]="'AnimationInOut'" [subTitle]="'Other'">
+    <div body>
+        <h2 *ngIf="isInDom" [@fadeInOutAnimation]>Hello World</h2>
+        <h2 *ngIf="!isInDom" [@fadeInOutAnimation]>World</h2>
+    </div>
+
+    <div footer>
+        <button (click)="isInDom = !isInDom">Toggle Animation</button>
+    </div>
+</app-card>

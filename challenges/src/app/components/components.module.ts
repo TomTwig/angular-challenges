@@ -19,6 +19,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
 import { ModalComponent } from './modal/modal.component';
 import { CounterComponent } from './counter/counter.component';
+import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { CounterComponent } from './counter/counter.component';
         SimpleTableComponent,
         RichTextViewerComponent,
         ModalComponent,
-        CounterComponent
+        CounterComponent,
+        SimplePopupComponent
     ],
     imports: [CommonModule, SharedModule, FormsModule, ReactiveFormsModule, RouterModule.forChild(COMPONENTS_ROUTES)]
 })

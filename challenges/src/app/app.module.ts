@@ -6,11 +6,11 @@ import { TopOfPageComponent } from './components/top-of-page/top-of-page.compone
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { SharedModule } from './shared/shared.module';
-import {} from './components/credit-card-input/credit-card-input.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [AppComponent, ToolbarComponent, TopOfPageComponent],
-    imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), SharedModule],
+    imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), SharedModule, BrowserAnimationsModule],
     providers: [],
     bootstrap: [AppComponent]
 })

@@ -1,11 +1,19 @@
 <app-card [title]="'Modal'" [subTitle]="'Components'">
     <div body>
+        <app-simple-popup [message]="'Simple Popup Component'">
+            <h1>Hello World</h1>
+        </app-simple-popup>
+    </div>
+</app-card>
+
+<app-card [title]="'Modal'" [subTitle]="'Components'">
+    <div body>
         <app-modal #modal>
             <p>Some Content</p>
         </app-modal>
     </div>
     <div footer>
-        <button (click) = "modal.open()">Call Modal</button>
+        <button (click)="modal.open()">Call Modal</button>
     </div>
 </app-card>
 
